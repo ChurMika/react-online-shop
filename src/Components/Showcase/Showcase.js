@@ -1,22 +1,32 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Profile from '../Profile/Profile'
-import Cart from '../Cart/Cart'
+import Item from '../Item/Item'
 import './Showcase.css'
 
 const Showcase = (props) => {
 
     return (
-        <div className="Cart">
+        <div className="Showcase">
             <nav>
                 <ul>
-                    <li><Link to="/profile">Profile</Link></li>
-                    <li><Link to="/cart">Cart</Link></li>
+                    <li><Link to="/">Главная</Link></li>
+                    <li><Link to="/admin">Админ</Link></li>
+                    <li><Link to="/login">Личный кабинет</Link></li>
+                    <li><Link to="/cart">Корзина</Link></li>
                 </ul>
             </nav>
             <main>
-                <div className='filter'></div>
-                <div className='items'></div>
+                <div className='items'>
+                    <Item />
+                    <Item />
+                    <Item />
+                    <Item />
+                    <Item />
+                    <Item />
+                    <Item />
+                    <Item />
+                    <Item />
+                </div>
             </main>
         </div>
     )

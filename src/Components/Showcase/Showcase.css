@@ -6,4 +6,18 @@ ul {
 li {
     margin: 0 15px;
     list-style-type: none;
+    
+}
+
+main {
+    display: flex;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Item {
+    margin: 10px 20px;
 }
