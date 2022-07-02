@@ -17,18 +17,20 @@ const Admin = (props) => {
             <div className='Admin-main'>
                 <div className='Admin-addNew'>
                     <button className='Admin-addNew-btn'>Добавить новый товар</button>
-                    <form className='Admin-addNew-form'>
-                        Название товара: <br />
-                        <input type="text"></input>
-                        Описание товара: <br />
-                        <input type="textarea"></input>
-                        Количество товара на складе: <br />
-                        <input type="number"></input>
-                        Фото товара: <br />
-                        <input type="file"></input>
-                        <br />
-                        <p>Отправить</p>
-                    </form>
+                    <div>
+                        <form className='Admin-addNew-form'>
+                            Название товара: <br />
+                            <input type="text"></input>
+                            Описание товара: <br />
+                            <input type="textarea"></input>
+                            Количество товара на складе: <br />
+                            <input type="number"></input>
+                            Фото товара: <br />
+                            <input type="file"></input>
+                            <br />
+                            <p>Отправить</p>
+                        </form>
+                    </div>
                 </div>
                 <div className='Admin-check'>
                     <button>Проверить закончившийся товар</button>
